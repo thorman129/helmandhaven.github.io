@@ -16,7 +16,7 @@
       background: url('sailboat-bg2.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Open Sans', sans-serif;
-      color: #fff;
+      color: #222;
       background-color: #0e1a24;
       background-size: cover;
       background-position: center;
@@ -24,18 +24,36 @@
     }
     header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
       background-color: rgba(0, 0, 0, 0.8);
-      padding: 1rem;
+      padding: 1rem 2rem;
     }
-    header nav a {
-      margin: 0 1.5rem;
+    .header-logo {
+      display: flex;
+      align-items: center;
+    }
+    .header-logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.5rem;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+    }
+    .header-logo a {
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav a {
+      margin: 0 1rem;
       color: #ccc;
       text-decoration: none;
       font-weight: 600;
       text-transform: uppercase;
     }
-    header nav a:hover {
+    nav a:hover {
       color: #fff;
     }
     .container {
@@ -52,15 +70,22 @@
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 1rem;
+      color: #222;
     }
     .tagline {
       font-size: 1.2rem;
-      color: #b0cfdc;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="helm_and_haven_logo_transparent.png" alt="Helm & Haven Logo">
+        Helm & Haven
+      </a>
+    </div>
     <nav>
       <a href="#retreats">Retreats</a>
       <a href="#impact">Impact</a>
@@ -70,7 +95,6 @@
     </nav>
   </header>
   <div class="container">
-    <img class="logo" src="helm_and_haven_logo_transparent.png" alt="Helm & Haven Logo">
     <h1>Helm & Haven</h1>
     <p class="tagline">A Sailing Sanctuary for Special Operations Veterans. We offer purpose, peace, and camaraderie through immersive maritime retreats.</p>
   </div>
