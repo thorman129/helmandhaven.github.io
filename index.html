@@ -15,119 +15,61 @@
     body {
       font-family: 'Open Sans', sans-serif;
       color: #fff;
-      background: url('sailboat-bg.jpg') no-repeat center center/cover;
-      height: 100vh;
-      overflow: hidden;
+      background-color: #0e1a24;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
     }
     header {
-      padding: 1rem 2rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.4);
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
     }
     header nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
+      margin: 0 1.5rem;
       color: #ccc;
-      font-weight: 500;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
     }
     header nav a:hover {
       color: #fff;
     }
     .container {
-      display: flex;
-      flex-direction: column;
       padding: 4rem 2rem;
-      max-width: 1200px;
+      max-width: 800px;
       margin: auto;
     }
-    .branding {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
+    .logo {
+      max-width: 120px;
+      margin-bottom: 1.5rem;
     }
-    .branding img {
-      width: 60px;
-      height: 60px;
-      margin-right: 1rem;
-    }
-    .branding h1 {
+    h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      max-width: 600px;
-      line-height: 1.3;
-      margin-bottom: 3rem;
-    }
-    .sections {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .section {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 1.5rem;
-      border-radius: 8px;
-    }
-    .section h3 {
-      font-size: 1.2rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
-      text-transform: uppercase;
-      font-weight: 700;
     }
-    .section ul {
-      list-style: disc;
-      padding-left: 1.2rem;
+    .tagline {
+      font-size: 1.2rem;
+      color: #b0cfdc;
     }
   </style>
 </head>
 <body>
   <header>
-    <div>ABOUT</div>
     <nav>
-      <a href="#about">About</a>
       <a href="#retreats">Retreats</a>
       <a href="#impact">Impact</a>
+      <a href="#captain">About the Captain</a>
       <a href="#contact">Contact</a>
+      <a href="#donate">Donate</a>
     </nav>
   </header>
   <div class="container">
-    <div class="branding">
-      <img src="favicon.ico" alt="Helm & Haven Icon" />
-      <h1>HELM & HAVEN</h1>
-    </div>
-    <div class="hero">
-      <h2>Sailing Sanctuary for Special Operations Veterans</h2>
-    </div>
-    <div class="sections">
-      <div class="section" id="about">
-        <h3>About</h3>
-        <p>Our mission is to introduce special operations veterans to the healing power of sailing—proving that peace can be found after the storms of life.</p>
-      </div>
-      <div class="section" id="retreats">
-        <h3>Retreats</h3>
-        <ul>
-          <li>Learn to sail</li>
-          <li>Explore remote locations</li>
-          <li>Tools for reintegration</li>
-          <li>Connect with fellow SOF operators</li>
-        </ul>
-      </div>
-      <div class="section" id="impact">
-        <h3>Impact</h3>
-        <p>Research shows SOF veterans succeed through purpose-driven exploration, peer support, and time on the water. Our results prove it.</p>
-      </div>
-      <div class="section" id="contact">
-        <h3>Contact</h3>
-        <p>Reach out to join a retreat, partner with us, or support the mission.</p>
-      </div>
-    </div>
+    <img class="logo" src="helm_and_haven_logo.png" alt="Helm & Haven Logo">
+    <h1>Helm & Haven</h1>
+    <p class="tagline">A Sailing Sanctuary for Special Operations Veterans. We offer purpose, peace, and camaraderie through immersive maritime retreats.</p>
   </div>
 </body>
 </html>
